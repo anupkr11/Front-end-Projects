@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(242, 228, 228);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+main{
+    margin-top: 5rem;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+header > img {
+    width: 70vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+nav {
+    background-color: rgb(38, 36, 36);
+    border-radius: 3rem;
+    margin-top: 5rem;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li{
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:link{
+    color: purple;
+}
+
+a:hover{
+    color: bisque;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    flex: 1;
+    border-radius: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+
+footer{
+    display: flex;
+    margin-top: 5rem;
+}
+
+footer div {
+    flex: 1;
+}
+
+div > p{
+    display: flex;
+    justify-content: end;
+}
+
+div > img{
+    width: 10%;
+}
+
+.glow {
+    color: rgb(254, 225, 4);
+    text-shadow:
+     0 0 7px #fff,
+     0 0 10px #fff,
+     0 0 31px #fff,
+     0 0 55px rgb(238, 226, 4),
+     0 0 91px rgb(255,226,4),
+     0 0 100px rgb(255,226,4),
+     0 0 122px rgb(255,226,4),
+     0 0 140px rgb(255,226,4);
+    animation: cycle 2s linear infinite;
+    animation-direction: alternate;
+}
+
+.glow1 {
+    color: bisque;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.glow3 {
+    background-color: rgb(222, 235, 231);
+    margin: 1rem;
+    
+}
+
+.glow3:hover {
+    transform: rotateZ(4deg);
+    transition: 1s;
+    opacity: 50%;
+}
+
+@keyframes cycle {
+    from{
+        transform: translate3d(0, 0, 0);
+    }
+    to{
+        transform: translate3d(50px, 0px, 0px);
+    }
+}
